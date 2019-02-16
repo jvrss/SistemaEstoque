@@ -1,6 +1,6 @@
 # SistemaEstoque
 
-Um sistema de estoque simples, utilizando como banco de dados o PostgreSQL e usando varias abordagens de desenvolvimento em diversas linguagens.
+Um sistema de estoque simples usando várias abordagens de desenvolvimento em diversas linguagens.
 
 Linguagens:
 
@@ -9,3 +9,7 @@ Linguagens:
 Arquitetura:
 
  - MVC
+ 
+ Banco de Dados:
+
+ - PostgreSQL
