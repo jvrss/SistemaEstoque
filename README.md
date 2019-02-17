@@ -2,7 +2,7 @@
 
 Um sistema de estoque simples usando várias abordagens de desenvolvimento em diversas linguagens.
 
-Linguagens:
+Linguagem:
 
  - Java
 
@@ -13,3 +13,10 @@ Arquitetura:
  Banco de Dados:
 
  - PostgreSQL
+ 
+ 
+Modulos:
+
+ - Login
+ - Cadastro de Item
+ - Alteração de Item
