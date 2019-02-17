@@ -18,5 +18,6 @@ Arquitetura:
 Modulos:
 
  - Login
+ - Listagem de Itens
  - Cadastro de Item
  - Alteração de Item
