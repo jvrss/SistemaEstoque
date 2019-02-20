@@ -1,6 +1,6 @@
 # SistemaEstoque
 
-Um sistema de estoque simples usando várias abordagens de desenvolvimento em diversas linguagens.
+Um sistema de estoque simples.
 
 Linguagem:
 
