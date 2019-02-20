@@ -4,7 +4,7 @@ Um sistema de estoque simples usando várias abordagens de desenvolvimento em di
 
 Linguagem:
 
- - Java - Desktop
+ - Java - Desktop/Web
 
 Arquitetura:
 
