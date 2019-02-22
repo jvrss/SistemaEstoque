@@ -4,9 +4,17 @@
         <servlet-name>AuthenticateController</servlet-name>
         <servlet-class>controller.AuthenticateController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ItemController</servlet-name>
+        <servlet-class>controller.ItemController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthenticateController</servlet-name>
         <url-pattern>/AuthenticateController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ItemController</servlet-name>
+        <url-pattern>/ItemController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
