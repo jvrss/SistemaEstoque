@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import dao.ItemDao;
@@ -60,7 +55,7 @@ public class ItemController extends HttpServlet {
 
         StringBuilder sb = new StringBuilder();
 
-        DateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         for (int i = 0; i < list.size(); i++) {
 
@@ -74,8 +69,14 @@ public class ItemController extends HttpServlet {
 
         }
 
-        PrintWriter writer = response.getWriter();
-        writer.append(sb.toString());
+        if (list.size() > 0) {
+
+            PrintWriter writer = response.getWriter();
+            writer.append(sb.toString());
+
+        }
+        
+        response.setStatus(HttpServletResponse.SC_OK);
 
     }
 
@@ -90,20 +91,20 @@ public class ItemController extends HttpServlet {
     }// </editor-fold>
 
     private void add(String nome, String descricao, String quantidade, HttpServletResponse response) throws IOException {
-        
-        System.out.println("HEre");
+
+        System.out.println("Here");
 
         ItemDao dao = new ItemDao();
-        
+
         try {
-            
+
             dao.salvarItem(nome, descricao, Integer.parseInt(quantidade));
 
         } catch (Exception e) {
-            
+
             dao.salvarItem(nome, descricao, 0);
         }
-        
+
         PrintWriter writer = response.getWriter();
         writer.append("OK");
 

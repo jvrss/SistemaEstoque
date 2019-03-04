@@ -55,13 +55,13 @@
                     <div class="sidebar-sticky">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a onclick="toDashboard();" class="nav-link active" href="#">
+                                <a id="menu-dash" onclick="toDashboard();" class="nav-link active" href="#">
                                     <span data-feather="home"></span>
                                     Dashboard <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a onclick="toAdd();" id="add-item" class="nav-link" href="#">
+                                <a id="menu-add" onclick="toAdd();" id="add-item" class="nav-link" href="#">
                                     <span data-feather="plus-circle"></span>
                                     Adicionar
                                 </a>
@@ -100,8 +100,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <script src="js/dashboard.js"></script>
         <script src="js/scpHome.js"></script>
+        <script src="js/dashboard.js"></script>
     </body>
 </html>
 

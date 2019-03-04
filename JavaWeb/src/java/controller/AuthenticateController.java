@@ -35,6 +35,20 @@ public class AuthenticateController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        RequestDispatcher view = request.getRequestDispatcher("view/home.jsp");
+        
+        HttpSession session = request.getSession(false);
+        
+        if(session == null){
+            
+            view = request.getRequestDispatcher("index.html");
+            
+        }
+        
+        view.forward(request, response);
+        
+        
     }
 
     /**
