@@ -77,7 +77,7 @@ public class MenuController implements ActionListener {
 
         List<Item> list = dao.list();
 
-        DateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         for (int i = 0; i < list.size(); i++) {
 
