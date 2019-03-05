@@ -98,10 +98,10 @@ public class ItemDao {
 
     }
 
-    public boolean alterarItem(int id, String nome, String descricao, int quantidade) {
 
+    public boolean editItem(int id, String nome, String descricao, String quantidade) {
         try {
-            String sql = "UPDATE item SET name = '" + nome + "', description = '" + descricao + "', amount = " + quantidade + " WHERE id = " + id;
+            String sql = "UPDATE item SET name = '" + nome + "', description = '" + descricao + "', amount = " + quantidade + ", last_update = now() WHERE id = " + id;
 
             Statement stmt = this.connection.createStatement();
 
@@ -114,7 +114,6 @@ public class ItemDao {
         }
 
         return false;
-
     }
 
 }

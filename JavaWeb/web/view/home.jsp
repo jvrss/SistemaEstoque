@@ -61,7 +61,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a id="menu-add" onclick="toAdd();" id="add-item" class="nav-link" href="#">
+                                <a id="menu-add" onclick="toForm();" id="add-item" class="nav-link" href="#">
                                     <span data-feather="plus-circle"></span>
                                     Adicionar
                                 </a>
@@ -74,7 +74,7 @@
                 <main id="main" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
                     <h2>Itens Estoque</h2>
-                    <div class="table-responsive">
+                    <div class="table-responsive table-hover">
                         <table class="table table-striped table-sm">
                             <thead>
                                 <tr>
