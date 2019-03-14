@@ -15,7 +15,7 @@ Arquitetura:
  - PostgreSQL
  
  
-Modulos:
+Módulos:
 
  - Login
  - Listagem de Itens
