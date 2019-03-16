@@ -2,9 +2,10 @@
 
 Um sistema de estoque simples.
 
-Linguagem:
+Linguagens:
 
  - Java - Desktop/Web
+ - PHP
 
 Arquitetura:
 
