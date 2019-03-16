@@ -118,11 +118,11 @@ public class ItemController extends HttpServlet {
 
         try {
 
-            dao.salvarItem(nome, descricao, Integer.parseInt(quantidade));
+            dao.insertItem(nome, descricao, Integer.parseInt(quantidade));
 
         } catch (Exception e) {
 
-            dao.salvarItem(nome, descricao, 0);
+            dao.insertItem(nome, descricao, 0);
         }
 
         PrintWriter writer = response.getWriter();
@@ -146,7 +146,7 @@ public class ItemController extends HttpServlet {
         
         ItemDao dao = new ItemDao();
         
-        dao.editItem(id, nome, descricao, quantidade);
+        dao.updateItem(id, nome, descricao, quantidade);
         
     }
 

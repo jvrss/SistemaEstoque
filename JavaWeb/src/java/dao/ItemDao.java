@@ -79,7 +79,7 @@ public class ItemDao {
 
     }
 
-    public boolean salvarItem(String nome, String descricao, int quantidade) {
+    public boolean insertItem(String nome, String descricao, int quantidade) {
 
         try {
             String sql = "INSERT INTO item (name, description, amount) VALUES ('" + nome + "', '" + descricao + "', " + quantidade + ")";
@@ -98,8 +98,7 @@ public class ItemDao {
 
     }
 
-
-    public boolean editItem(int id, String nome, String descricao, String quantidade) {
+    public boolean updateItem(int id, String nome, String descricao, String quantidade) {
         try {
             String sql = "UPDATE item SET name = '" + nome + "', description = '" + descricao + "', amount = " + quantidade + ", last_update = now() WHERE id = " + id;
 
