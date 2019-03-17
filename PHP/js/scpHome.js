@@ -14,7 +14,7 @@ function contentEdit(id) {
 
 function toDashboard() {
 
-    window.location.href = "/JavaWeb/AuthenticateController";
+    window.location.href = "index.php?controller=Logon&action=index";
 }
 
 function toForm() {
@@ -50,9 +50,8 @@ function addItem() {
 
     $.ajax({
         method: "POST",
-        url: "/JavaWeb/ItemController",
-        data: {operation: "add",
-            nome: nome,
+        url: "index.php?controller=Item&action=add",
+        data: {nome: nome,
             descricao: descricao,
             quantidade: quantidade},
         success: function (msg) {
@@ -72,9 +71,8 @@ function editItem(id) {
 
     $.ajax({
         method: "POST",
-        url: "/JavaWeb/ItemController",
-        data: {operation: "get",
-            id: id},
+        url: "index.php?controller=Item&action=get",
+        data: {id: id},
         success: function (obj) {
             var item = JSON.parse(obj);
 
@@ -96,9 +94,8 @@ function modifyItem(id) {
 
     $.ajax({
         method: "POST",
-        url: "/JavaWeb/ItemController",
-        data: {operation: "set",
-            nome: nome,
+        url: "index.php?controller=Item&action=update",
+        data: {nome: nome,
             descricao: descricao,
             quantidade: quantidade,
             id: id},

@@ -49,6 +49,14 @@ class LogonController extends Controller {
 
         return;
     }
+    
+    public function indexAction(){
+        
+        $this->setRoute($this->view->getIndexRoute());
+        
+        $this->showView();
+        
+    }
 
     public function logoffAction() {
         unset($_SESSION['USER']);
